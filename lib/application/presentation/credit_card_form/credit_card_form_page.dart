@@ -1,3 +1,4 @@
+import 'package:cardwiz_app/application/presentation/credit_card_form/widgets/pop_up_menu.dart';
 import 'package:flutter/material.dart';
 import 'package:cardwiz_app/application/presentation/credit_card_form/widgets/card_cvv_field.dart';
 import 'package:cardwiz_app/application/presentation/credit_card_form/widgets/card_number_field.dart';
@@ -18,6 +19,7 @@ class CreditCardForm extends StatelessWidget {
           "CardWiz",
           style: TextStyle(fontWeight: FontWeight.bold),
         ),
+        actions: const [CustomPopupMenuButton()],
       ),
       body: const Padding(
         padding: EdgeInsets.all(9.0),
