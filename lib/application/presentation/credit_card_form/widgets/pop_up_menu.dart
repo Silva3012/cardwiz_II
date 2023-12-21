@@ -1,3 +1,5 @@
+import 'package:cardwiz_app/application/presentation/banned_countries/banned_countries_page.dart';
+import 'package:cardwiz_app/application/presentation/saved_credit_cards/saved_credit_cards_page.dart';
 import 'package:flutter/material.dart';
 
 class CustomPopupMenuButton extends StatelessWidget {
@@ -14,23 +16,21 @@ class CustomPopupMenuButton extends StatelessWidget {
               child: Text("Banned Countries"),
             ),
             const PopupMenuItem<String>(
-              value: "saved_cards",
+              value: "saved_credit_cards",
               child: Text("Saved Cards"),
             ),
           ];
         },
         onSelected: (String value) {
           if (value == "banned_countries") {
-            // TODO: navigate to config page for banned countries
             Navigator.of(context).push(
               MaterialPageRoute(
-                  builder: (BuildContext context) => const Placeholder()),
+                  builder: (BuildContext context) => const BannedCountries()),
             );
-          } else if (value == "saved_cards") {
-            // TODO: navigate to a page to view saved cards
+          } else if (value == "saved_credit_cards") {
             Navigator.of(context).push(
               MaterialPageRoute(
-                  builder: (BuildContext context) => const Placeholder()),
+                  builder: (BuildContext context) => const SavedCreditCards()),
             );
           }
         },

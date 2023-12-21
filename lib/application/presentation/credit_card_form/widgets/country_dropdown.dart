@@ -15,7 +15,7 @@ class CountryDropdownState extends State<CountryDropdown> {
   @override
   Widget build(BuildContext context) {
     return DropdownMenu<String>(
-      expandedInsets: EdgeInsets.zero,
+      expandedInsets: const EdgeInsets.all(9.0),
       // initialSelection: list.first,
       hintText: "Select a Country",
       onSelected: (String? value) {

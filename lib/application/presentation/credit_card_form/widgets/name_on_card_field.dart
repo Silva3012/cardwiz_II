@@ -8,7 +8,7 @@ class NameOnCardField extends StatelessWidget {
     return TextField(
         decoration: const InputDecoration(
           labelText: "Name on the Card",
-          hintText: "Name",
+          hintText: "Enter your name",
         ),
         onChanged: (String value) {
           // TODO: Save users input in an object
