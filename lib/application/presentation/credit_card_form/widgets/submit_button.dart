@@ -15,6 +15,9 @@ class SubmitButton extends StatelessWidget {
     } else {
       return ElevatedButton(
         onPressed: () {},
+        style: ElevatedButton.styleFrom(
+          fixedSize: const Size(200, 50),
+        ),
         child: const Text("Validate"),
       );
     }

@@ -21,38 +21,40 @@ class CreditCardForm extends StatelessWidget {
         ),
         actions: const [CustomPopupMenuButton()],
       ),
-      body: const Padding(
-        padding: EdgeInsets.all(9.0),
-        child: Column(
-          children: <Widget>[
-            NameOnCardField(),
-            CardNumberField(),
-            Row(
-              children: [
-                Expanded(
-                  child: ExpriyDateField(),
-                ),
-                SizedBox(
-                  width: 30,
-                ),
-                Expanded(
-                  child: CardCvv(),
-                )
-              ],
-            ),
-            SizedBox(
-              height: 30,
-            ),
-            CountryDropdown(),
-            SizedBox(
-              height: 30,
-            ),
-            SubmitButton(),
-            SizedBox(
-              height: 30,
-            ),
-            ScanCardButton()
-          ],
+      body: const SingleChildScrollView(
+        child: Padding(
+          padding: EdgeInsets.all(9.0),
+          child: Column(
+            children: <Widget>[
+              NameOnCardField(),
+              CardNumberField(),
+              Row(
+                children: [
+                  Expanded(
+                    child: ExpriyDateField(),
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Expanded(
+                    child: CardCvv(),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 30,
+              ),
+              CountryDropdown(),
+              SizedBox(
+                height: 30,
+              ),
+              SubmitButton(),
+              SizedBox(
+                height: 30,
+              ),
+              ScanCardButton()
+            ],
+          ),
         ),
       ),
     );
