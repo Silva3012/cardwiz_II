@@ -5,10 +5,10 @@ abstract class CreditCardFormEvent extends Equatable {
   List<Object?> get props => [];
 }
 
-class OnSubmit extends CreditCardFormEvent {}
+class OnSubmitEvent extends CreditCardFormEvent {}
 
-class OnScanCard extends CreditCardFormEvent {}
+class OnScanCardEvent extends CreditCardFormEvent {}
 
-class OnSavedCards extends CreditCardFormEvent {}
+class OnSavedCardsEvent extends CreditCardFormEvent {}
 
-class OnBannedCountries extends CreditCardFormEvent {}
+class OnBannedCountriesEvent extends CreditCardFormEvent {}
